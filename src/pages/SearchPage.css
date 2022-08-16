@@ -1,0 +1,101 @@
+.searchPage__logo{
+    object-fit: contain;
+    height: 50px;
+    margin-right: 50px;
+}
+
+.searchPage__header{
+    display: flex;
+    /*sticks in one position while scrolling down*/
+    position: sticky;
+    /*stick to the top*/
+    top: 0;
+    background-color: white;
+    /*show over everything*/
+    z-index: 100;
+    align-items: flex-start;
+    padding: 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
+/*change the style that was origionally set just for this page. Other will be unchanged */
+.searchPage__headerBody > .search > .search__input{
+    margin-top: 0;
+    width: unset;
+    margin: unset;
+    max-width: unset;
+}
+
+.searchPage__options{
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+.searchPage__optionsRight,
+.searchPage__optionsLeft{
+    display: flex;
+}
+
+/*for the options anchor tags*/
+/*the words, not the logos*/
+.searchPage__option a{
+    text-decoration: none;
+    color: grey;
+}
+
+.searchPage__optionsRight {
+    margin-left: 80px;
+}
+
+.searchPage__option{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/*the words margin between its respective logo - use anchor*/
+.searchPage__option a {
+    margin-left: 5px;
+}
+
+.searchPage__result {
+    margin: 40px 0;
+}
+
+.searchPage__resultCount{
+    color: rgb(157, 155, 155);
+    font-size: 14px;
+}
+
+.searchPage__results {
+    max-width: 650px;
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 100px;
+}
+
+.searchPage__resultImage{
+    /*stays in its respective container with contain keyword*/
+    object-fit: contain;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.searchPage__resultTitle{
+    text-decoration: none;
+}
+.searchPage__resultTitle:hover{
+    text-decoration: underline;
+}
+
+.searchPage__resultTitle >h2{
+    font-weight: 500;
+    margin-top: 3px;
+}
+
+.searchPage__resultSnippet {
+    margin-top:-10px;
+}
+
